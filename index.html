@@ -1,0 +1,197 @@
+<!DOCTYPE html>  <!--html5 declaration-->
+  <html lang="en"> <!--language-->
+    <!--That is not seen in the webpage but read by browsers and view on the navigation bar-->
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="Styles.css" />
+      <title>Community Survey Form</title>
+    </head>
+    <!--body contain contents here that are visible and main/fist part of webpage-->
+    <body>
+    
+        <header class="header">
+          <h1 id="title">Community Survey Form</h1> <!--heading-->
+          <p>
+          <em id="description">Thank you for taking the time to help us,<br>we appreciate your time and insights.</em> <!--paragraph-->
+          </p>
+        </header>
+        <!--html survey form  viewer/user boilerplate-->
+       <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label> 
+            <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Your name..."
+             required/>
+          </div>
+          <div class="form-group">
+             <label id="email-label" for="email">Email</label>
+             <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Your email..."
+             required/>
+          </div>
+            <div class="form-group">
+             <label id="number-label" for="number"
+             >Age<span class="Clue">(optional)</span></label>
+             <input
+             type="number"
+             name="age"
+             id="number"
+             min="12"
+             max="120"
+             class="form-control"
+             placeholder="e.g., 25"/>
+            </div>
+          
+             <div class="form-group">
+               <label for="drop">Which option best describes your current level of education?</label>
+               <select id="drop" name="education" class="form-control" required>
+               <option disabled selected value>Select an option...</option>
+               <option value="high-school">High School</option>
+               <option value="associate-degree">Associate's Degree</option>
+               <option value="bachelor-degree">Bachelor's Degree</option>
+               <option value="master-degree">Master's Degree</option>
+               <option value="phd">PhD</option>
+                <option value="other">Other</option>
+               <option value="preferNo">Prefer not to say</option>
+               </select>
+             </div>
+            
+              <div class="form-group">
+               <label for="down">Which option best describes your current profession?</label>
+               <select id="down" name="role" class="form-control" required>
+               <option disabled selected value>Select an option...</option>
+               <option value="student">Student</option>
+               <option value="job">Full Time Job</option>
+               <option value="job">Part Time Job</option>
+               <option value="self">Self Employed </option>
+                <option value="unemployed">Unemployed</option>
+                <option value="other">Other</option>
+               <option value="preferNo">Prefer not to say</option>
+               </select>
+              </div>
+
+              <div class="form-group">
+               <p>Would you recommend open source learning to a friend?</p>
+               <label>
+               <input
+               name="user-recommend"
+               value="definitely"
+               type="radio"
+               class="input-radio"
+               checked/>Definitely</label>
+
+               <label>
+               <input
+               name="user-recommend"
+               value="maybe"
+               type="radio"
+               class="input-radio"/>Maybe</label>
+
+              <label>
+              <input
+               name="user-recommend"
+               value="not-sure"
+               type="radio"
+               class="input-radio"/>Not sure
+               </label>
+              </div>
+          
+           <div class="form-group">
+            <label for="most-like">What is your favorite feature of open source learning?</label>
+            <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option...</option>
+            <option value="openSource">Open Source</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="challenges">Challenges</option>
+            </select>
+           </div>
+          
+              <div class="form-group">
+               <p>
+               What would you like to see improved?
+               <span class="clue">(Check all that apply)</span>
+               </p> 
+               <label>
+               <input
+               name="prefer"
+               value="learnings"
+               type="checkbox"
+               class="input-checkbox"/>Learning</label>
+               <label>
+               <input
+               name="prefer"
+               value="development"
+               type="checkbox"
+               class="input-checkbox"/>Development</label>
+               <label>
+               <input
+               name="prefer"
+               value="community"
+               type="checkbox"
+               class="input-checkbox"/>Community</label>
+               <label>
+               <input
+               name="prefer"
+               value="challenges"
+               type="checkbox"
+               class="input-checkbox"/>Challenges</label>
+               <label>
+               <input
+               name="prefer"
+               value="open-source"
+               type="checkbox"
+               class="input-checkbox"/>Open Source</label>
+               <label>
+               <input
+               name="prefer"
+               value="help"
+               type="checkbox"
+               class="input-checkbox"/>Help</label>
+               <label>
+               <input
+               name="prefer"
+               value="videos"
+               type="checkbox"
+               class="input-checkbox"/>Videos</label>
+               
+               <label>
+               <input
+               name="prefer"
+               value="wiki"
+               type="checkbox"
+               class="input-checkbox"/>Wiki</label>
+               <label>
+               <input
+               name="prefer"
+               value="forum"
+               type="checkbox"
+               class="input-checkbox"/>Forum</label>
+              </div>
+            
+             <div class="form-group">
+               <p class="comment">Any comments or suggestions!</p>
+               <textarea
+               id="comments"
+               class="input-textarea"
+               name="comment"
+               placeholder="Your comments  here..."></textarea>
+              </div>
+            
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit 
+            </button>
+          </div> 
+        </form> 
+    </body>
+  </html>
