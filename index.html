@@ -19,17 +19,17 @@
         <!--html survey form  viewer/user boilerplate-->
        <form id="survey-form">
           <div class="form-group">
-            <label id="name-label" for="name">Name</label> 
+            <label for="name">Name</label>
             <input
              type="text"
              name="name"
              id="name"
              class="form-control"
              placeholder="Your name..."
-             required/>
+             required/> 
           </div>
           <div class="form-group">
-             <label id="email-label" for="email">Email</label>
+             <label for="email">Email</label>
              <input
              type="email"
              name="email"
@@ -39,8 +39,7 @@
              required/>
           </div>
             <div class="form-group">
-             <label id="number-label" for="number"
-             >Age<span class="Clue">(optional)</span></label>
+             <label for="number">Age<span class="Clue">(optional)</span></label>
              <input
              type="number"
              name="age"
@@ -52,7 +51,8 @@
             </div>
           
              <div class="form-group">
-               <label for="drop">Which option best describes your current level of education?</label>
+               <p>What is your highest level of education?</p>
+               <label for="drop">
                <select id="drop" name="education" class="form-control" required>
                <option disabled selected value>Select an option...</option>
                <option value="high-school">High School</option>
@@ -63,10 +63,12 @@
                 <option value="other">Other</option>
                <option value="preferNo">Prefer not to say</option>
                </select>
+               </label>
              </div>
             
               <div class="form-group">
-               <label for="down">Which option best describes your current profession?</label>
+               <p>Which option best describes your current profession?</p>
+               <label for="down">
                <select id="down" name="role" class="form-control" required>
                <option disabled selected value>Select an option...</option>
                <option value="student">Student</option>
@@ -77,27 +79,29 @@
                 <option value="other">Other</option>
                <option value="preferNo">Prefer not to say</option>
                </select>
+               </label>
               </div>
 
               <div class="form-group">
                <p>Would you recommend open source learning to a friend?</p>
-               <label>
-               <input
+               <!--radio button-->
+               <label for="definitely">
+               <input id="definitely"
                name="user-recommend"
                value="definitely"
                type="radio"
                class="input-radio"
                checked/>Definitely</label>
 
-               <label>
-               <input
+               <label for="maybe">
+               <input id="maybe"
                name="user-recommend"
                value="maybe"
                type="radio"
                class="input-radio"/>Maybe</label>
 
-              <label>
-              <input
+               <label for="not-sure">
+               <input id="not-sure"
                name="user-recommend"
                value="not-sure"
                type="radio"
@@ -106,7 +110,8 @@
               </div>
           
            <div class="form-group">
-            <label for="most-like">What is your favorite feature of open source learning?</label>
+            <p>What is your favorite feature of open source learning?</p>
+            <label for="most-like">
             <select id="most-like" name="mostLike" class="form-control" required>
             <option disabled selected value>Select an option...</option>
             <option value="openSource">Open Source</option>
@@ -114,64 +119,64 @@
             <option value="community">Community</option>
             <option value="challenges">Challenges</option>
             </select>
+            </label>
            </div>
           
               <div class="form-group">
-               <p>
-               What would you like to see improved?
-               <span class="clue">(Check all that apply)</span>
+               <p>What would you like to see improved?
+               <span class="Clue">(Check all that apply)</span>
                </p> 
-               <label>
-               <input
+               <label for="learning">
+               <input id="learning"
                name="prefer"
                value="learnings"
                type="checkbox"
                class="input-checkbox"/>Learning</label>
-               <label>
-               <input
+               <label for="development">
+               <input id="development"
                name="prefer"
                value="development"
                type="checkbox"
                class="input-checkbox"/>Development</label>
-               <label>
-               <input
+               <label for="community">
+               <input id="community"
                name="prefer"
                value="community"
                type="checkbox"
                class="input-checkbox"/>Community</label>
-               <label>
-               <input
+               <label for="challenges">
+               <input id="challenges"
                name="prefer"
                value="challenges"
                type="checkbox"
                class="input-checkbox"/>Challenges</label>
-               <label>
-               <input
+               <label for="open-source">
+               <input id="open-source"
                name="prefer"
                value="open-source"
                type="checkbox"
                class="input-checkbox"/>Open Source</label>
-               <label>
-               <input
+               <label for="help">
+               <input id="help"
                name="prefer"
                value="help"
                type="checkbox"
                class="input-checkbox"/>Help</label>
-               <label>
-               <input
+               <label for="videos">
+               <input id="videos"
                name="prefer"
                value="videos"
                type="checkbox"
                class="input-checkbox"/>Videos</label>
                
-               <label>
-               <input
+               <label for="wiki">
+               <input id="wiki"
                name="prefer"
                value="wiki"
                type="checkbox"
                class="input-checkbox"/>Wiki</label>
-               <label>
-               <input
+               <label for="forum">
+               <input id="forum"
                name="prefer"
                value="forum"
                type="checkbox"
