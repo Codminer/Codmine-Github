@@ -1,0 +1,351 @@
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Subrahmanyan_Chandrasekhar.gif");
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: none;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 1;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: inline-block;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#tribute-info {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000;
+    margin-bottom: -10px;
+    padding: 0 auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+hr {
+    border: none;
+    text-shadow: #1c367b;
+    background-color: #333;
+    margin: 10px auto;
+    width: 85%;
+    height: 1px;
+    box-shadow: 0 1px 2px rgba(104, 96, 96, 0.1);
+    opacity: 0.75;
+    z-index: 2;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 12px;
+    width: fit-content;
+    max-width: 90%;
+    overflow: hidden;
+    opacity: 0.95;
+    z-index: 2;
+
+}
+ blockquote {
+    color: #000;
+    margin: 0;
+    padding: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+#tribute-link {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    align-items: center;
+    padding-left: 153px;
+    padding-bottom: 27px;
+    color: #0b6231;
+    text-decoration: none;
+    overflow: hidden;
+    font-weight: bold;
+    z-index: 2;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(104, 96, 96, 0.1);
+    max-width: 90%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 96, 96, 0.1);
+}
+
+#tribute-link:link {
+    color: #09bfed;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#tribute-link:visited {
+    color: #041cfa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#tribute-link:hover {
+    color: #15742f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    transform: scale(1.05);
+    
+}
+
+#tribute-link:active {
+    color: #9a3b3b;
+    text-decoration: none;
+    transition: color 0.1s ease;
+}
+
+h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+    padding: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(104, 96, 96, 0.1);
+    padding: 10px;
+    width: fit-content;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
+    opacity: 0.95;
+    background-clip: padding-box;
+}
+
+ul {
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: #000;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+#tribute-info {
+    width: 90%;
+    min-width: 450px;
+    margin: 0 auto;
+    padding: 0 auto;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    opacity: 0.75;
+    background-clip: padding-box;
+}
+
+#img-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    color: navy;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0.75;
+}
+
+strong {
+    font-weight: bold;
+    color: #1c367b;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#headline {
+    font-weight: bold;
+    justify-content: center;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    display: block;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+blockquote {
+    font-style: italic;
+    color: #191818;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding: 0 auto;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Center #image within its parent */
+#image {
+    width: 90%;
+    max-width: 100%;
+    min-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    opacity: 0.95;
+    background-clip: padding-box;
+}
+
+/* Ensure img is block for test 16 */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    opacity: 0.95;
+    background-clip: padding-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive fix for #image */
+@media (max-width: 900px) and (min-width: 350px) {
+
+    #image,
+    img {
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        border-radius: 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        opacity: 0.95;
+        background-clip: padding-box;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* ...existing code... */
